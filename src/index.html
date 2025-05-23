@@ -140,7 +140,7 @@ button{
         <div class="shape"></div>
     </div>
     <form>
-      <form action="../index.html">
+      <form action="#" onsubmit="event.preventDefault(); login();>
         <h3>Login GenZ Cafe</h3>
 
         <label for="username">Username</label>
@@ -149,11 +149,16 @@ button{
         <label for="password">Password</label>
         <input type="password" placeholder="Password" id="password">
 
-        <button>Log In</button>
+        <button type="submit">Log In</button>
         <div class="social">
           <div class="go"><i class="fab fa-google"></i>  Google</div>
           <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
         </div>
-    </form>
+    </form
+    <script>
+      function login() {
+        window.location.href="../index.html";
+      }
+    </script>
 </body>
 </html>
